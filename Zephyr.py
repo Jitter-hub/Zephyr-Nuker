@@ -84,7 +84,9 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds {self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             else:
                 print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Ban{self.color} {member.strip()}\033[37m")
@@ -101,7 +103,9 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds {self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             else:
                 print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Kick{self.color} {member.strip()}\033[37m")
@@ -123,7 +127,9 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\33[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             else:
                 print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Create Channels{self.color}\033[37m")
@@ -146,7 +152,9 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\33[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             else:
                 print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Create Channels{self.color}\033[37m")
@@ -166,7 +174,9 @@ class Zephyr:
 
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\33[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             
             else:
@@ -188,7 +198,9 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             else:
                 print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Create Roles{self.color}\033[37m")
@@ -205,7 +217,9 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             else:
                 print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Delete Channel{self.color} {channel.strip()}\033[37m")
@@ -223,7 +237,9 @@ class Zephyr:
 
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
 
             else:
@@ -241,7 +257,9 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             
             else:
@@ -259,7 +277,9 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
             else:
                 print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Nickname {self.color} {member.strip()}\033[37m")
@@ -282,7 +302,9 @@ class Zephyr:
             
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
 
             else:
@@ -305,7 +327,9 @@ class Zephyr:
 
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                print(f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}")
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                print(choice(ratelimit))
+                sleep(retryint)
                 break
 
             else:
