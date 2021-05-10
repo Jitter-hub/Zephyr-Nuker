@@ -67,7 +67,7 @@ class Zephyr:
             if r.status_code == 200 or r.status_code == 201 or r.status_code == 204:
                 print(f"{self.color}[\033[37m+{self.color}]\033[37m Renamed Guild To{self.color} {name}\033[37m")
             else:
-                print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Rename Guild{self.color} {name}\033[37m")
+                print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Rename Guild\033[37m")
         except:
             pass
 
@@ -84,7 +84,7 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -103,7 +103,7 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -127,7 +127,7 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -152,7 +152,7 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -174,7 +174,7 @@ class Zephyr:
 
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -198,7 +198,7 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -217,7 +217,7 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -237,7 +237,7 @@ class Zephyr:
 
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -257,7 +257,7 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -277,12 +277,12 @@ class Zephyr:
                 break
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
             else:
-                print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Nickname {self.color} {member.strip()}\033[37m")
+                print(f"{self.color}[\033[37m-{self.color}]\033[37m Couldn't Nickname{self.color} {member.strip()}\033[37m")
                 break
     
     def PruneMembers(self, guild, days, role, reason):
@@ -302,7 +302,7 @@ class Zephyr:
             
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -327,7 +327,7 @@ class Zephyr:
 
             elif r.status_code == 429:
                 retryint = r.json()['retry_after']
-                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying{self.color} in {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
+                ratelimit = [f"{self.color}[\033[37m!{self.color}]\033[37m Retrying in{self.color} {retryint}\033[37m seconds{self.color}", f"{self.color}[\033[37m!{self.color}]\033[37m Rate Limited{self.color} for {retryint}\033[37m seconds{self.color}"]
                 print(choice(ratelimit))
                 sleep(retryint)
                 break
@@ -394,7 +394,7 @@ class Zephyr:
         channel_amount = input(f"{self.color}> \033[37mChannel Amount{self.color}: \033[37m")
         role_name = input(f"{self.color}> \033[37mRole Names{self.color}: \033[37m")
         role_amount = input(f"{self.color}> \033[37mRole Amount{self.color}: \033[37m")
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mNuking Server...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mNuking Server...{self.color}\033[37m')
         
 
         members = open('Scraped/members.txt')
@@ -422,7 +422,7 @@ class Zephyr:
     async def DmAllExecute(self):
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         message = input(f'{self.color}> \033[37mMessage{self.color}: \033[37m')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mMessaging Members...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mMessaging Members...{self.color}\033[37m')
         
         members = open('Scraped/members.txt')
         for member in members:
@@ -435,7 +435,7 @@ class Zephyr:
         reason = input(f'{self.color}> \033[37mReason{self.color}: \033[37m')
         
         roles = open('Scraped/roles.txt')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mPruning Members...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mPruning Members...{self.color}\033[37m')
         
         for role in roles:
             Thread(target=self.PruneMembers, args=(guild, days, role, reason,)).start()
@@ -445,7 +445,7 @@ class Zephyr:
     async def BanExecute(self):
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         reason = input(f'{self.color}> \033[37mReason{self.color}: \033[37m')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mBanning Members...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mBanning Members...{self.color}\033[37m')
         
         members = open('Scraped/members.txt')
         for member in members:
@@ -455,7 +455,7 @@ class Zephyr:
     async def KickExecute(self):
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         reason = input(f'{self.color}> \033[37mReason{self.color}: \033[37m')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mKicking Members...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mKicking Members...{self.color}\033[37m')
         
         members = open('Scraped/members.txt')
         for member in members:
@@ -464,7 +464,7 @@ class Zephyr:
 
     async def ChannelDeleteExecute(self):
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mDeleting Channels...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mDeleting Channels...{self.color}\033[37m')
         
         channels = open('Scraped/channels.txt')
         for channel in channels:
@@ -473,7 +473,7 @@ class Zephyr:
     
     async def EmojiDeleteExecute(self):
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mDeleting Emojis...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mDeleting Emojis...{self.color}\033[37m')
         
         emojis = open('Scraped/emojis.txt')
         for emoji in emojis:
@@ -482,7 +482,7 @@ class Zephyr:
 
     async def RoleDeleteExecute(self):
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mDeleting Roles...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mDeleting Roles...{self.color}\033[37m')
         
         roles = open('Scraped/roles.txt')
         for role in roles:
@@ -493,7 +493,7 @@ class Zephyr:
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         name = input(f"{self.color}> \033[37mChannel Names{self.color}: \033[37m")
         amount = input(f"{self.color}> \033[37mAmount{self.color}: \033[37m")
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mCreating Channels...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mCreating Channels...{self.color}\033[37m')
         
         for _ in range(int(amount)):
             Thread(target=self.CreateChannels, args=(guild, name,)).start()
@@ -502,7 +502,7 @@ class Zephyr:
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         name = input(f"{self.color}> \033[37mChannel Names{self.color}: \033[37m")
         amount = input(f"{self.color}> \033[37mAmount{self.color}: \033[37m")
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mCreating Channels...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mCreating Channels...{self.color}\033[37m')
         
         for _ in range(int(amount)):
             Thread(target=self.CreateVoiceChannels, args=(guild, name,)).start()
@@ -511,7 +511,7 @@ class Zephyr:
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         name = input(f"{self.color}> \033[37mChannel Names{self.color}: \033[37m")
         amount = input(f"{self.color}> \033[37mAmount{self.color}: \033[37m")
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mCreating Channels...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mCreating Channels...{self.color}\033[37m')
         
         for _ in range(int(amount)):
             Thread(target=self.CreateNsfwChannels, args=(guild, name,)).start()
@@ -520,7 +520,7 @@ class Zephyr:
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         name = input(f"{self.color}> \033[37mRole Names{self.color}: \033[37m")
         amount = input(f"{self.color}> \033[37mAmount{self.color}: \033[37m")
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mCreating Roles...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mCreating Roles...{self.color}\033[37m')
         
         for _ in range(int(amount)):
             Thread(target=self.CreateRoles, args=(guild, name,)).start()
@@ -528,7 +528,7 @@ class Zephyr:
     async def ChangeNameExecute(self):
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         name = input(f'{self.color}> \033[37mName{self.color}: \033[37m')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mChanging Guild Name...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mChanging Guild Name...{self.color}\033[37m')
         
         Thread(target=self.ChangeName, args=(guild, name,)).start()
 
@@ -536,7 +536,7 @@ class Zephyr:
         guild = input(f'{self.color}> \033[37mGuild ID{self.color}: \033[37m')
         name = input(f'{self.color}> \033[37mName{self.color}: \033[37m')
         members = open('Scraped/members.txt')
-        print(f'{self.color}[\033[37m!{self.color}] \033[37mNicknaming Members...{self.color}\033[37m')
+        print(f'\n{self.color}[\033[37m!{self.color}] \033[37mNicknaming Members...{self.color}\033[37m')
         
         for member in members:
             Thread(target=self.NicknameMembers, args=(guild, member, name,)).start()
@@ -614,7 +614,7 @@ class Zephyr:
             await self.Menu()
         elif choice == '9' or choice == 'scrape':
             await self.Scrape()
-            sleep(3)
+            sleep(2)
             await self.Menu()
         elif choice == 'T' or choice == 't' or choice == 'themes':
             await self.ThemeChanger()
@@ -655,9 +655,9 @@ class Zephyr:
     async def ThemeChanger(self):
         system(f'cls & mode 110,20 & title Zephyr Nuker - Themes')
         print(f'''
-                            {self.color}╔═╗╔═╗╔═╗╦ ╦╦ ╦╦═╗  ╔╗╔╦ ╦╦╔═╔═╗╦═╗
-                            \033[90m╔═╝║╣ ╠═╝╠═╣╚╦╝╠╦╝  ║║║║ ║╠╩╗║╣ ╠╦╝
-                            \033[37m╚═╝╚═╝╩  ╩ ╩ ╩ ╩╚═  ╝╚╝╚═╝╩ ╩╚═╝╩╚═
+                        {self.color}╔═╗╔═╗╔═╗╦ ╦╦ ╦╦═╗  ╔╗╔╦ ╦╦╔═╔═╗╦═╗
+                        \033[90m╔═╝║╣ ╠═╝╠═╣╚╦╝╠╦╝  ║║║║ ║╠╩╗║╣ ╠╦╝
+                        \033[37m╚═╝╚═╝╩  ╩ ╩ ╩ ╩╚═  ╝╚╝╚═╝╩ ╩╚═╝╩╚═
       {self.color}╔═══════════════════════╦═══════════════════════╦═══════════════════════╗\033[37m
       {self.color}║ \033[37m[{self.color}1\033[37m] \033[37mRed               {self.color}║\033[37m [{self.color}5\033[37m] \033[37mPurple            {self.color}║\033[37m [{self.color}9\033[37m] \033[37mGrey              {self.color}║\033[37m
       {self.color}║ \033[37m[{self.color}2\033[37m] \033[37mGreen             {self.color}║\033[37m [{self.color}6\033[37m] \033[37mBlue              {self.color}║\033[37m [{self.color}0\033[37m] \033[37mPeach             {self.color}║\033[37m
@@ -728,7 +728,7 @@ class Zephyr:
                             {self.color}[\033[37m2{self.color}] \033[37m Streaming          {self.color}[\033[37m2{self.color}] \033[37m DND
                             {self.color}[\033[37m3{self.color}] \033[37m Watching           {self.color}[\033[37m3{self.color}] \033[37m Idle
                             {self.color}[\033[37m4{self.color}] \033[37m Listening          {self.color}[\033[37m4{self.color}] \033[37m Invisible
-                            {self.color}[\033[37m5{self.color}] \033[37m Menu
+                            {self.color}[\033[37m5{self.color}] \033[37m Menu               
                              
         \033[37m''')
         status_type = input(f"{self.color}> \033[37mChoice{self.color}: \033[37m")
