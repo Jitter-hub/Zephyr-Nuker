@@ -748,13 +748,13 @@ class Zephyr:
             else:
                 pass
 
-            print(f"{self.color}[\033[37m!{self.color}]\033[37m Set Status To{self.color} Playing {status_message}\033[37m")
+            print(f"\n{self.color}[\033[37m!{self.color}]\033[37m Set Status To{self.color} Playing {status_message}\033[37m")
 
         elif status_type == '2':
             status_name = input(f'{self.color}> \033[37mName{self.color}: \033[37m')
             status_url = input(f'{self.color}> \033[37mStream Url{self.color}: \033[37m')
             await bot.change_presence(activity=discord.Streaming(name=f"{status_name}", url= f"{status_url}"))
-            print(f"{self.color}[\033[37m!{self.color}]\033[37m Set Status To{self.color} Streaming {status_name}\033[37m")
+            print(f"\n{self.color}[\033[37m!{self.color}]\033[37m Set Status To{self.color} Streaming {status_name}\033[37m")
             
         elif status_type == '4':
             mode = input(f'{self.color}> \033[37mMode{self.color}: \033[37m')
@@ -769,7 +769,7 @@ class Zephyr:
                 await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=f"{status_song}"), status=discord.Status.invisible)
             else:
                 pass
-            print(f"{self.color}[\033[37m!{self.color}]\033[37m Set Status To{self.color} Listening to {status_song}\033[37m")
+            print(f"\n{self.color}[\033[37m!{self.color}]\033[37m Set Status To{self.color} Listening to {status_song}\033[37m")
             
         elif status_type == '3':
             mode = input(f'{self.color}> \033[37mMode{self.color}: \033[37m')
@@ -784,7 +784,7 @@ class Zephyr:
                 await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"{status_movie}"), status=discord.Status.invisible)            
             else:
                 pass
-            print(f"{self.color}[\033[37m!{self.color}]\033[37m Set Status To{self.color} Watching {status_movie}\033[37m")
+            print(f"\n{self.color}[\033[37m!{self.color}]\033[37m Set Status To{self.color} Watching {status_movie}\033[37m")
         
         elif status_type == '5':
             await self.Menu()
@@ -794,11 +794,29 @@ class Zephyr:
 
     @bot.event
     async def on_ready():
-        system(f'cls & mode 110,20 & title {bot.user} is ready')
-        print(f"\x1b[38;5;51m> \033[37mLoading...\x1b[38;5;51m \033[37m")
-        sleep(2)
-        await Zephyr().Menu()
+        if token_type == "bot":
+            system(f'cls & mode 120,20 & title Zephyr Nuker - Loading...')
+            print(f"\x1b[38;5;51m> \033[37mLoading...\x1b[38;5;51m \033[37m")
+            sleep(2)
+            system(f'cls & mode 110,20 & title {bot.user} is ready')
+            sleep(2)
+            await Zephyr().Menu()
+        
+        else:
+            pass
     
+    @bot.event
+    async def on_connect():
+        if token_type == "user":
+            system(f'cls & mode 120,20 & title Zephyr Nuker - Loading...')
+            print(f"\x1b[38;5;51m> \033[37mLoading...\x1b[38;5;51m \033[37m")
+            sleep(2)
+            system(f'cls & mode 110,20 & title {bot.user} is ready')
+            sleep(2)
+            await Zephyr().Menu()
+        
+        else:
+            pass
 
         
 
