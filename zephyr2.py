@@ -540,7 +540,7 @@ class Zephyr:
             Thread(target=self.DeleteRoles, args=(guild, role,)).start()
         
         sleep(1)
-        print(f"{self.color}[\033[37m!{self.color}]\033[37m Deleted {self.color}{deleted_roles}\033[37m Members")
+        print(f"{self.color}[\033[37m!{self.color}]\033[37m Deleted {self.color}{deleted_roles}\033[37m Roles")
         
 
     async def ChannelSpamExecute(self):
